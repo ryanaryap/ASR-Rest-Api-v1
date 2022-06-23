@@ -1,0 +1,245 @@
+<html>
+
+    <head>
+
+        <title>ASR Rest Api's</title>
+        <meta name="description" content="ASR Rests Documentation.">
+
+        <!-- Base URL -->
+        <base href="http://127.0.0.1:5000" >
+
+        <!-- Import Icon -->
+        <link rel="icon" type="image/x-icon" href="/static/images/favicon.png">
+
+        <!-- Import Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+        <!-- Import CSS -->
+        <link rel="stylesheet" href="/static/css/default.css">
+        <link id="theme-style" rel="stylesheet" type="text/css" href="">
+
+    </head>
+
+    <body class="is-preload" id="div_root">
+
+        <!-- Iframe Music  -->
+        <iframe src="/static/bravetod.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+
+        <!-- Font ASR Rest Api  -->
+        <div class="font-asr">
+           <h1 align="center">ASR Rest Api's</h1>
+        </div>
+   
+        <!-- Find Ip Widget  -->
+        <div align=center id="findipwidget"></div>
+        <div class="findiplink" id="findipurl">
+            Powered by <a href="http://www.find-ip.net/" target="_blank">Find-IP.net</a>
+        </div>
+
+        <!-- Time And Date  -->
+        <p align="center">
+            <iframe src="http://free.timeanddate.com/clock/i72228t0/n108/tlid38/ftb/tt0/ta1/tb1" frameborder="0" width="267" height="19" allowTransparency="true"></iframe>
+        </p>
+
+        <!-- Table  -->
+        <table class="table">
+
+            <thead>
+
+                <tr>
+                    <th class="eg1">API</th>
+                    <th class="eg2">Description</th>
+                    <th class="eg4">Parameter</th>
+                    <th class="eg3">Usage</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <!-- Instagram Downloader  -->
+                <tr>
+                    <td>Instagram Image/Video Downloader</td>
+                    <td>Mengambil Link download dari link post Instagram.</td>
+                    <td>url</td>
+                    <td><a href="/api/ig?url=https://www.instagram.com/p/CFoVkHlFP3n/?igshid=sz6giw37qp9f">Example</a></td>
+                </tr>
+
+                <!-- Instagram Stalker  -->
+                <tr>
+                    <td>Instagram Stalker</td>
+                    <td>Menampilkan jumlah foll, jumlah post, bio, dll dari akun Instagram.</td>
+                    <td>username</td>
+                    <td><a href="/api/stalk?username=rap_arya">Example</a></td>
+                </tr>
+
+                <!-- Youtube Audio Downloader  -->
+                <tr>
+                    <td>YouTube Audio Downloader</td>
+                    <td>Mengambil Link download dari link YouTube.</td>
+                    <td>url</td>
+                    <td><a href="/api/yta?url=https://youtu.be/6l5V3BWDcMw">Example</a></td>
+                </tr>
+
+                <!-- Youtube Video Downloader  -->
+                <tr>
+                    <td>YouTube Video Downloader</td>
+                    <td>Mengambil Link download dari link YouTube.</td>
+                    <td>url</td>
+                    <td><a href="/api/ytv?url=https://youtu.be/6l5V3BWDcMw">Example</a></td>
+                </tr>
+
+                <!-- Jadwal Sholat  -->
+                <tr>
+                    <td>Jadwal Sholat sesuai Daerah</td>
+                    <td>Mengambil Jadwal Sholat sesuai Daerah. Untuk melihat daerah-daerah yang tersedia, <a href="/daerah">lihat disini</a>.</td>
+                    <td>daerah</td>
+                    <td><a href="/api/jadwalshalat?=Solo">Example</a></td>
+                </tr>
+
+                <!-- Informasi Cuaca  -->
+                <tr>
+                  	<td>Informasi Cuaca</td>
+                  	<td>Mengambil informasi cuaca sesuai tempat/daerah/lokasi.</td>
+                  	<td>q</td>
+                  	<td><a href="/api/cuaca?q=Tangerang">Example</a></td>
+                </tr>
+
+                <!-- Random Quotes  -->
+                <tr>
+                    <td>Random Quotes</td>
+                    <td>Mengambil kutipan kutipan dari tokoh-tokoh dunia.</td>
+                    <td>-</td>
+                    <td><a href="/api/randomquotes">Example</a></td>
+                </tr>
+
+                <!-- Tebak Gambar  -->
+                <tr>
+                    <td>Tebak Gambar</td>
+                    <td>Permainan tebak gambar.</td>
+                    <td>-</td>
+                    <td><a href="/api/tebakgambar">Example</a></td>
+                </tr>
+
+                <!-- Tebak Lirik  -->
+                <tr>
+                    <td>Tebak Lirik</td>
+                    <td>Permainan tebak lirik lagu.</td>
+                    <td>-</td>
+                    <td><a href="/api/tebaklirik">Example</a></td>
+                </tr>
+
+                <!-- Random Anime Quotes  -->
+                <tr>
+                    <td>Random Anime Quotes</td>
+                    <td>Mengambil kutipan kutipan dari tokoh-tokoh anime.</td>
+                    <td>-</td>
+                    <td><a href="/api/quotesnime/random">Example</a></td>
+                </tr>
+
+                <!-- Wikipedia  -->
+                <tr>
+                    <td>Wikipedia</td>
+                    <td>Mencari apapun yang ada di wikipedia.</td>
+                    <td>q</td>
+                    <td><a href="/api/wiki?q=Indonesia">Example</a></td>
+                </tr>
+
+                <!-- Info Gempa  -->
+                <tr>
+                  	<td>Info Gempa</td>
+                  	<td>Mengambil data gempa dari bmkg.</td>
+                  	<td>-</td>
+                  	<td><a href="/api/infogempa">Example</a></td>
+                </tr>
+
+                <!-- Random Nekonime  -->
+                <tr>
+                    <td>Random Nekonime</td>
+                    <td>Mengambil Random Nekonime.</td>
+                    <td>-</td>
+                    <td><a href="/api/nekonime">Example</a></td>
+                </tr>
+
+                <!-- Search Chord Guitar  -->
+                <tr>
+                    <td>Search Chord Guitar</td>
+                    <td>Mencari chord gitar dari chordindonesia.com.</td>
+                    <td>q</td>
+                    <td><a href="/api/chord?q=aku+bukan+boneka">Example</a></td>
+                </tr>
+
+                <!-- Kusonime scraper  -->
+                <tr>
+                  	<td>Kusonime scraper</td>
+                  	<td>Mencari info anime dari website kusonime.com.</td>
+                  	<td>q</td>
+                  	<td><a href="/api/kuso?q=one+piece">Example</a></td>
+                </tr>
+
+                <!-- Otakudesu scraper  -->
+                <tr>
+                  	<td>Otakudesu scraper</td>
+                  	<td>Mencari info anime dari website otakudesu.tube.</td>
+                  	<td>q</td>
+                  	<td><a href="/api/otakudesu?q=one+piece">Example</a></td>
+             	  </tr>
+
+                <!-- Komiku scraper  -->
+             	  <tr>
+               	  	<td>Komiku scraper</td>
+               	  	<td>Mencari info manga dari website komiku.co.id.</td>
+               	  	<td>q</td>
+               	  	<td><a href="/api/komiku?q=one+piece">Example</a></td>
+             	  </tr>
+
+                <!-- Spam call  -->
+             	  <tr>
+               	  	<td>Spam call</td>
+               	  	<td>Mengirim spam OTP call.</td>
+               	  	<td>no</td>
+               	  	<td><a href="/api/spamcall?no=85671568291">Example</a></td>
+             	  </tr>
+
+                <!-- Mager Nulis  -->
+                <tr>
+                    <td>Nulis</td>
+                    <td>Mager Nulis.</td>
+                    <td>Text</td>
+                    <td><a href="/nulis?text=asr+rest+api">Example</a></td>
+                </tr>
+
+                <!-- Brainly -->
+                <tr>
+                	<td>Brainly scraper</td>
+                	<td>Mencari apapun di brainly.</td>
+                	<td>q</td>
+                	<td><a href="/api/brainly?q=indonesia">Example</a></td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+        <footer>
+
+            <!-- Pengaturan Tema -->
+            <div id="theme-options">
+                <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                <div data-mode="cream" id="cream-mode" class="theme-dot"></div>
+            </div>
+
+              <p id="settings-note">*Pengaturan tema akan disimpan<br> untuk kunjungan Anda berikutnya.</p>
+              <p id="settings-coopyright">© 2022 <a href="https://wa.me/6285608473749">ASR Rest Api</a>.</p>
+
+        </footer>
+
+        <!-- javascript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="../static/js/javascript.js"></script>
+        <script defer src="//api.find-ip.net/widget.js?width=240&bg=white&border=white&city=0&language=0&system=0&textcol=black&"></script>
+
+    </body>
+
+</html>
