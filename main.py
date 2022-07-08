@@ -29,7 +29,7 @@ def convert_size(size_bytes):
 
 @app.route('/tts/<path:filename>', methods=['GET','POST'])
 def sendTts(filename):
-	return send_from_directory(app.config['MEDIA'], filename, as_attachment=False)
+	return send_from_directory(app.config['MEDIA'], filename, as_attachment=True)
 
 @app.route('/api/layer', methods=['GET','POST'])
 def layer():
@@ -599,4 +599,4 @@ def index():
 def error(e):
 	return render_template('error.html'), 404
 if __name__ == '__main__':
-	app.run(host='0.0.0.0', port=int(os.environ.get('PORT','5000')),debug=True)
+	app.run(host='0.0.0.0', port=int(os.environ.get('PORT','5000')),debug=False)
