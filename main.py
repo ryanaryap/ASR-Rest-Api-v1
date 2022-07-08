@@ -29,7 +29,7 @@ def convert_size(size_bytes):
 
 @app.route('/tts/<path:filename>', methods=['GET','POST'])
 def sendTts(filename):
-	return send_from_directory(app.config['MEDIA'], filename, as_attachment=True)
+	return send_from_directory(app.config['MEDIA'], filename, as_attachment=False)
 
 @app.route('/api/layer', methods=['GET','POST'])
 def layer():
