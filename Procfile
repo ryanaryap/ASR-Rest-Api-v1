@@ -1,1 +1,1 @@
-web: python main.py runserver
+web: gunicorn Asr-Rest-Api-v1.wsgi
