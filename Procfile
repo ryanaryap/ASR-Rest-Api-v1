@@ -1,1 +1,1 @@
-web: gunicorn asrrestapi.wsgi 
+web: gpython main.py runserver
