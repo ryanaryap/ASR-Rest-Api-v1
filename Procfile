@@ -1,1 +1,1 @@
-web: gpython main.py runserver
+web: python main.py runserver
