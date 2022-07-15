@@ -595,7 +595,7 @@ def api():
 def index():
 	return render_template('index.html')
 
-@app.errorhandler(/404)
+@app.errorhandler(404)
 def error(e):
 	return render_template('error.html'), 404
 if __name__ == '__main__':
