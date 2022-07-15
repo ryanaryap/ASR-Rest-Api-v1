@@ -1,1 +1,1 @@
-web: gunicorn ToDoApps.wsgi
+web: python main.py
