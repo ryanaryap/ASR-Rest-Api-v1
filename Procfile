@@ -1,1 +1,3 @@
-web: gunicorn --bind 0.0.0.0:$PORT asr-restapi:app
+web: gunicorn api.wsgi:application --log-file - --log-level debug
+python manage.py collectstatic --noinput
+main.py migrate
