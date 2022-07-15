@@ -591,7 +591,7 @@ def quotesnimerandom():
 def api():
 	return render_template('api.html')
 
-@app.route('/index', methods=['GET','POST'])
+@app.route('/', methods=['GET','POST'])
 def index():
 	return render_template('index.html')
 
@@ -599,4 +599,4 @@ def index():
 def error(e):
 	return render_template('error.html'), 404
 if __name__ == '__main__':
-	app.run(host='0.0.0.0', port=int(os.environ.get('PORT','5000')),debug=False)
+	app.run(host='0.0.0.0', port=int(os.environ.get('PORT','5000')),debug=True)
